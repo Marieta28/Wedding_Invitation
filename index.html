@@ -10,54 +10,48 @@
         font-family: 'Playfair Display', serif;
         margin: 0;
         padding: 0;
+        background-color: #f8f8f8;
     }
     .container {
         background-color: rgba(255, 255, 255, 0.85);
         text-align: center;
         position: relative;
+        padding: 20px;
     }
     .header {
         background-image: url('./wedding_photo_big.jpg'); /* Используем первую фотографию как фон */
         background-size: cover;
         background-position: center;
-        padding: 20px;
-        margin-top: 0px;
-        margin-bottom: 20px;
         height: 500px; /* Устанавливаем высоту фотографии */
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
         color: white; /* Изменяем цвет текста на белый */
+        text-shadow: 0px 0px 10px rgba(0,0,0,0.7);
     }
     h1 {
-        font-size: 1.2em; /* Уменьшим размер шрифта */
+        font-size: 3em; /* Уменьшим размер шрифта */
         color: #fff;
         text-transform: uppercase; /* Добавим верхний регистр */
         margin: 0;
     }
     h2 {
-        font-family: 'CosiArm', cursive;
-        font-size: 20px; /* Увеличим размер шрифта */
+        font-family: 'Great Vibes', cursive;
+        font-size: 2em; /* Увеличим размер шрифта */
         color: #fff;
-        margin: 10px;
+        margin: 10px 0;
     }
     h3 {
-        font-size: 30px; /* Уменьшим размер шрифта */
+        font-size: 1.5em; /* Уменьшим размер шрифта */
         color: #1b1a1a;
         text-transform: uppercase; /* Добавим верхний регистр */
+        margin-bottom: 20px;
     }
     .date {
-        font-size: 60px;
-        margin: 300px 0;
+        font-size: 4em;
+        margin: 20px 0;
         color: #fff;
-    }
-    .infoo {
-        display: flex;
-        flex-direction: column;
-        align-items: center; 
-    }
-    .infoo1 {
-        width:  50%;
-        font-family: 'Armhmk';
     }
     .info {
         padding: 20px;
@@ -104,10 +98,6 @@
         margin-bottom: 20px;
         font-weight: bold;
     }
-    .gallery div {
-        display: inline-block;
-        margin: 10px;
-    }
     .gallery img {
         width: 100%;
         height: auto;
@@ -134,61 +124,6 @@
         margin-bottom: 20px;
         font-weight: bold;
     }
-    .form-container form {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .form-container form div {
-        margin-bottom: 15px;
-        width: 100%;
-    }
-    .form-container form label {
-        display: block;
-        font-weight: bold;
-        margin-bottom: 5px;
-        color: #000;
-    }
-    .form-container form input[type="text"],
-    .form-container form input[type="number"],
-    .form-container form select {
-        width: 50%;
-        padding: 10px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        box-sizing: border-box;
-        font-size: 1em;
-    }
-    .form-container form input[type="submit"] {
-        padding: 10px 20px;
-        background-color: #4CAF50;
-        color: #fff;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-        font-size: 1em;
-    }
-    .form-container form input[type="submit"]:hover {
-        background-color: #45a049;
-    }
-    .thank-you {
-        text-align: center;
-        background-color: rgba(255, 255, 255, 0.85);
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-    .thank-you h1 {
-        font-family: 'Great Vibes', cursive;
-        font-size: 50px;
-        margin: 0;
-        color: #4CAF50;
-    }
-    .thank-you p {
-        font-size: 20px;
-        margin: 10px 0;
-    }
     @keyframes fadeIn {
         from { opacity: 0; }
         to { opacity: 1; }
@@ -199,9 +134,6 @@
         }
         .gallery img {
             max-width: 250px;
-        }
-        .form-container form div {
-            width: 100%;
         }
     }
 </style>
@@ -215,14 +147,10 @@
         <div class="date">14.07.24</div>
     </div>
 
-    <div class="infoo">
-        <p><strong class="infoo1">Սիրով հրավիրում ենք Ձեզ մեր կյանքի ամենակարևոր տոնակատարությանը՝ ՄԵՐ ՀԱՐՍԱՆԻՔԻՆ</strong></p>
-    </div> 
-
     <div class="info">
         <h3>Ընթացակարգ</h3>
         <p><strong>Հարսի տուն</strong> 12:00</p>
-        <p><strong>Եկեղեցի</strong> 13:30 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3049.7307791399174!2d44.50022101570766!3d40.17644688965786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x406abc55928a4281%3A0x66c99859b58a2740!2sSt.%20Sargis%20Vicarial%20Church!5e0!3m2!1sen!2s!4v1623454942688!5m2!1sen!2s" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe></p>  
+        <p ><strong>Եկեղեցի</strong> 13:30 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3049.7307791399174!2d44.50022101570766!3d40.17644688965786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x406abc55928a4281%3A0x66c99859b58a2740!2sSt.%20Sargis%20Vicarial%20Church!5e0!3m2!1sen!2s!4v1623454942688!5m2!1sen!2s" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe></p>  
         <p><strong>Փեսայի տուն</strong> 15:00</p>
         <p><strong>Ֆոտոշութ</strong> 16:00</p>
         <p><strong>Հարսանյաց սրահ</strong> 17:30 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3049.6790809974876!2d44.41446501570769!3d40.16523658965034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x406abf883fc6aea9%3A0x73e51b2e6332ca16!2sRubina%20Hall%20Restaurant!5e0!3m2!1sen!2s!4v1623445400199!5m2!1sen!2s" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe></p>
@@ -241,4 +169,3 @@
 
 </body>
 </html>
-
